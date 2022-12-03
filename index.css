@@ -1,0 +1,102 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+   font-family: 'Source Sans Pro', sans-serif;}
+   
+body{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;}
+
+header{
+display: flex;
+ justify-content: space-evenly;
+ width: 100%;}
+
+/* Oldagram logo with personal avatar */
+
+.header{
+display: inline-flex;
+justify-content: space-between;
+padding: 0.25em;
+height: 3em;
+width: 100vw;
+min-width: 22em;}
+
+.userAvatar, .avatar img{border-radius: 5em;}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    min-width: 24em;
+   max-width: 40em;
+   min-height: 24em;    }
+
+.post-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.post-container img{
+    margin-top: -2em;
+    width: 100%;}
+.post{  text-align: justify;}
+.post p{margin-top:0;
+    margin-left:0.5em;}
+
+.avatar{
+display: flex;
+margin-right: auto;
+margin-left: 0;
+height: 5em;
+width: 12.5em;}
+
+
+
+.avatar-description p{
+text-align: justify;
+  margin:0;}
+  
+.avatar img{
+  height: 3em;
+  width: 3em;   
+    padding: 0.25em;   
+   margin-top: -0.25em;;
+   }
+
+/* like share comment */
+.icon{
+    display: flex;
+    justify-content: space-between;
+    width: 4em;
+    text-indent: 0.5em
+}
+
+.icon i:hover{cursor: pointer;}
+
+fa-regular{height: 3em;
+
+}
+
+
+.bold{font-weight: bolder;}
+
+.likes{
+  
+}
+
+
+.comment{
+    margin: 0 auto 1.5em 0;
+    
+    text-indent: 1em;
+    text-align: justify;
+}
