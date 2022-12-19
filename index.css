@@ -6,13 +6,12 @@ html, body {
     padding: 0;
    font-family: 'Source Sans Pro', sans-serif;}
    
-body{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;}
 
-header{
-display: flex;
+body,header,.container,.post-container,.icon,.avatar{display:flex;}
+body,.container,.post-container{
+    flex-direction: column;
+}
+body,header{
  justify-content: space-evenly;
  width: 100%;}
 
@@ -30,20 +29,14 @@ min-width: 22em;}
 
 
 
-.container{
-    display: flex;
-    flex-direction: column;
+.container{    
     margin: auto;
-    justify-content: center;
     text-align: center;
     min-width: 24em;
    max-width: 40em;
    min-height: 24em;    }
 
-.post-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;}
+
 
 .post-container img{
     margin-top: -2em;
@@ -53,7 +46,6 @@ min-width: 22em;}
     margin-left:0.5em;}
 
 .avatar{
-display: flex;
 margin-right: auto;
 margin-left: 0;
 height: 5em;
@@ -69,34 +61,24 @@ text-align: justify;
   height: 3em;
   width: 3em;   
     padding: 0.25em;   
-   margin-top: -0.25em;;
-   }
+   margin-top: -0.25em;}
 
 /* like share comment */
 .icon{
-    display: flex;
     justify-content: space-between;
     width: 4em;
-    text-indent: 0.5em
-}
+    text-indent: 0.5em}
 
 .icon i:hover{cursor: pointer;}
 
-fa-regular{height: 3em;
-
-}
-
-
+fa-regular{height: 3em;}
 .bold{font-weight: bolder;}
 
-.likes{
-  
-}
-
+.liked{color: red;}
+.shared{ color: blue;}
 
 .comment{
-    margin: 0 auto 1.5em 0;
-    
-    text-indent: 1em;
-    text-align: justify;
-}
+    padding: 0.5em;
+    margin: -1rem 0 1rem 0;   
+    text-indent: 1rem;
+    text-align: justify;}
